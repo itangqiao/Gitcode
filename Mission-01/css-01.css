@@ -1,0 +1,9 @@
+.item {
+    float: left;
+    margin: 1%;
+    width: 31.33%;
+    padding-bottom: 31.33%;
+    height: 0;
+    background: #FFA600;
+    border-radius: 10px;
+}

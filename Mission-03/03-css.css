@@ -1,0 +1,44 @@
+        /* 清除浏览器默认格式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 10px;
+            min-width: 425px;   /* 设置最小缩放：防止变形 */
+            background: #68cdd5;
+            color: #FFF;
+        }
+        .back {
+            margin: 3rem 0 0 3rem ;
+            height: 10rem;
+        }
+        .logo {    
+            height: 10rem;
+            text-align: center;
+        }
+        .content {
+            height: 20rem;
+            box-sizing: border-box; /* 防止盒子变形 */
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+        .content p {
+            padding: 0 8rem;
+            display: inline-block;  /* 将块级元素转换为行内块元素，让盒子自适应内容宽高，再让内容水平居中 */
+            text-align: left;
+            line-height: 2;
+            font-size: 2.4rem;     
+        }
+        .foot p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .left {
+            float: left;
+            margin-left: 10rem;
+        }
+        .right {
+            float: right;
+            margin-right: 10rem;
+        }

@@ -1,0 +1,70 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #EFF0F4;
+}
+
+/* 顶部栏 */
+.header {
+    height: 46px;
+    background: #5FBFCD;
+    color: #FFF;
+    margin-bottom: 10px;
+    line-height: 40px;
+    position: relative;
+}
+.header span {
+    position: absolute;
+}
+.close-l {
+    left: 10px;
+}
+.login-m {
+    left: 50%; /* 向左位移水平居中 */
+    transform: translateX(-50%); /* 过渡移动自身宽度一半 */
+}
+.sign-r {
+    right: 10px;
+}
+
+/* 表单 */
+.getForm input[type] {
+    border: none;
+    width: 100%;
+}
+.getForm input:nth-child(1),
+input:nth-child(2) {  
+    display: block;
+    height: 50px;
+    margin-top: 8px;
+    font-size: 10px; 
+    /* color: rgba(0,0,0,0.2); */
+}
+.getForm input:nth-child(1) { 
+    background: #FFF url("iphone.png") 20px no-repeat;
+    background-size: 20px;
+    padding-left: 60px;
+    border-right: #000 2px solid;
+}
+.getForm input:nth-child(2) {
+    background: #FFF url("locked.png") 20px no-repeat;
+    background-size: 20px;
+    padding-left: 60px;
+}
+.getForm input:last-child {
+    height: 50px;
+    font-size: 16px;
+    color: #FFF;
+    background: #5FBFCD;
+    margin: 30px 0 10px;
+}
+/* 忘记密码链接 */
+.forget {
+    color: #5FBFCD;
+    float: right;
+    margin-right: 10px;
+}

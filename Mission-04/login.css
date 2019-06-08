@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 body {
     background: #EFF0F4;
@@ -21,39 +22,61 @@ body {
     position: absolute;
 }
 .close-l {
-    left: 10px;
+    left: 20px;
 }
 .login-m {
     left: 50%; /* 向左位移水平居中 */
     transform: translateX(-50%); /* 过渡移动自身宽度一半 */
 }
 .sign-r {
-    right: 10px;
+    right: 20px;
 }
 
 /* 表单 */
+.getForm {
+    position: relative;
+}
 .getForm input[type] {
     border: none;
     width: 100%;
+    font-size: 18px;
 }
-.getForm input:nth-child(1),
-input:nth-child(2) {  
+.line-one {
+    display: block;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.1);
+    top: 2px;
+    left: 55px;
+    position: absolute;
+}
+.line-two {
+    display: block;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.1);
+    top: 60px;
+    left: 55px;
+    position: absolute;
+}
+/* 占位符字体修改 */
+input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.getForm input[type] {  
     display: block;
     height: 50px;
     margin-top: 8px;
-    font-size: 10px; 
-    /* color: rgba(0,0,0,0.2); */
 }
-.getForm input:nth-child(1) { 
-    background: #FFF url("iphone.png") 20px no-repeat;
-    background-size: 20px;
-    padding-left: 60px;
-    border-right: #000 2px solid;
+.input-pn { 
+    background: #FFF url("iphone.png") 30px no-repeat;
+    background-size: 15px;
+    padding-left: 96px;
 }
-.getForm input:nth-child(2) {
-    background: #FFF url("locked.png") 20px no-repeat;
-    background-size: 20px;
-    padding-left: 60px;
+.input-pw {
+    background: #FFF url("locked.png") 30px no-repeat;
+    background-size: 15px;
+    padding-left: 96px;
 }
 .getForm input:last-child {
     height: 50px;
@@ -66,5 +89,5 @@ input:nth-child(2) {
 .forget {
     color: #5FBFCD;
     float: right;
-    margin-right: 10px;
+    margin-right: 20px;
 }

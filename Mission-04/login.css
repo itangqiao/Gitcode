@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1px;
+    text-decoration: none;
 }
+
 body {
     background: #EFF0F4;
 }
@@ -17,6 +19,9 @@ body {
     margin-bottom: 10px;
     line-height: 40px;
     position: relative;
+}
+.header a:hover {
+    color: #FFF;
 }
 .header span {
     position: absolute;
@@ -45,7 +50,7 @@ body {
     display: block;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.1);
-    top: 2px;
+    top: 3px;
     left: 55px;
     position: absolute;
 }
@@ -53,7 +58,7 @@ body {
     display: block;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.1);
-    top: 60px;
+    top: 61px;
     left: 55px;
     position: absolute;
 }

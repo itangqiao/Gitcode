@@ -20,7 +20,10 @@ body {
     line-height: 40px;
     position: relative;
 }
-.header a:hover {
+.header a:link {
+    color: #FFF;
+}
+.header a:visited {
     color: #FFF;
 }
 .header span {
@@ -89,10 +92,16 @@ input::-webkit-input-placeholder {
     color: #FFF;
     background: #5FBFCD;
     margin: 30px 0 10px;
+    cursor: pointer;
 }
 /* 忘记密码链接 */
-.forget {
+.forget a:link {
     color: #5FBFCD;
+}
+.forget a:visited {
+    color: #5FBFCD;
+}
+.forget {
     float: right;
     margin-right: 20px;
 }

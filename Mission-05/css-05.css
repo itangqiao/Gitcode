@@ -108,7 +108,7 @@ body {
 .work-space img {
     width: 16px;
     height: 16px;
-    margin: 3px 3px 0 0;
+    margin: 4.5px 3px 0 0;
 }
 .work-space :nth-child(3){
     margin: 0 -5px 0 -5px;

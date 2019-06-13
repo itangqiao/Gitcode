@@ -5,6 +5,7 @@
     list-style: none;
 }
 body {
+    min-width: 320px;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -15,8 +16,9 @@ body {
     color: #FFF;
     line-height: 50px;
     text-align: center;
-    position: relative;
-    
+    width: 100%;
+    top: 0;
+    position: fixed; 
 }
 .topbar-t span {
     top: -1px;
@@ -32,7 +34,9 @@ body {
 /* 背景 */
 .bg-b {
     background: url("bg.png") center no-repeat;
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
+    background-size: cover;
+    width: 100%;
     height: 250px;
     line-height: 330px;
     display: flex;
@@ -69,6 +73,8 @@ body {
 }
 .content-m ul {
     display: flex;
+}
+.line-hight {
     padding: 15px 30px;
 }
 .font-style {
@@ -76,17 +82,16 @@ body {
     letter-spacing: 1.2px;
 }
 .pro-title {
-    margin-left: -20px;
+    width: 100%;
+    padding: 15px 0 15px 0px;
     border-bottom: 1px solid #ccc;
 }
 /* 自适应底边框 */
 .content-m span {
     position: absolute;
     left: 20px;
-    right: 20px;
-    display: inline-block;
-    height: 0.5px;
-    border-bottom: 0.2px solid #ccc;
+    width: 100%;
+    border-bottom: 0.8px solid #ccc;
 }
 .content-m ul + ul {
     font-size: 18px;
@@ -96,7 +101,8 @@ body {
 .content-m li {
     padding-right: 15px;
 }
-.content-m ul:first-child li:first-child {
+.pro-title li:first-child {
+    margin: -2px 0 0 10px;
     font-weight: 700;
     color: #5fc0cd;
 }
@@ -134,15 +140,17 @@ body {
 }
 
 /* 底部 */
-
 .conn-f {
     display: flex;
     justify-content: center;
     padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 5px;
 }
 .conn-f input {
-    display: inline-block;
     flex: 1;
+    display: inline-block;
     width: 100px;
     height: 60px;
     border-radius: 8px;
@@ -158,7 +166,8 @@ body {
 .conn-f input:last-child {
     margin-right: 20px;
 }
-.conn-f :hover {
+.conn-f :hover {   
     background: #5fc0cd;
     color: #FFF;
+    cursor: pointer;
 }

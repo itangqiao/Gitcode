@@ -1,7 +1,7 @@
 
 body {
     position: relative;
-    min-width: 290px; 
+    /* min-width: 290px;  */
 }
 header {
     background: #5FBFCD;
@@ -25,8 +25,8 @@ header {
     background: #54A7B2;
 }
 .top-sec2 {
-    color: #5FBFCD;
-    background: #FFF;
+    color: #5FBFCD !important;
+    background: #FFF !important;
 }
 .top-img {
     width: 45px;
@@ -41,6 +41,7 @@ header {
 /* 下拉菜单栏 */
 .menu-select {
     margin-top: 42px;
+    display: flex;
 }
 .select{
     padding: 0;
@@ -54,12 +55,10 @@ header {
     height: 36px;
     text-align-last: center;
 }
-.select-local {
-    direction: rtl;
-}
 @media (max-width: 992px) {
-    .content-m {
-        margin-top: 149px !important; 
+    .select  {                  
+        width: 100%; 
+        height: 36px;
     }
 }
 /* 内容区 */
@@ -75,7 +74,6 @@ header {
 .content-m h4 {
     color: #EC6B4A;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 1px;
 }
 .date-img {
@@ -96,34 +94,54 @@ header {
     transform: scale(0.5);
     vertical-align: middle;
 }
-.right-img {
-    font-weight: 700;
-    color: #5FBFCD;
-    font-size: 16px;
+        
+    .right-img:after {            
+        content: '';            
+        display: block;            
+        width: 12px;            
+        height: 12px;            
+        border-right: 2px solid #5FBFCD;           
+        border-top: 2px solid #5FBFCD;            
+        -webkit-transform: rotate(45deg);
+         /*箭头方向可以自由切换角度*/            
+        transform: rotate(45deg);
+        margin: -42px 142px 0;   
 }
 .content-m p, h4 {
     margin: 0;
     display: inline-block;
 }
+.content-m h4 {
+    padding-right: 38px;
+}
 
 .content-m h5 {
     margin: 0;
+    height: 16px;
     padding-left: 30px;
     font-weight: 600;
 }
 .content-m > div {
-    height: 100px;
+    width: 100%;
+    height: 90px;
     border-bottom: 0.5px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 0;
 }
 .row-l {
     height: 70px;
-    width: 200px;   
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .row-r {
-    margin-right: 8px;
+    height: 70px;
+    width: 180px;
+    text-align: right;
+    line-height: 70px;
 }
 /* 底部 */
 .f-bottom-bar {
@@ -133,7 +151,7 @@ header {
     width: 100%;
     height: 50px;
     background: #F7F9FB;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 /* 图片样式统一 */
 footer span {
@@ -155,7 +173,7 @@ footer p {
 }
 footer .f-home {  
     color: #54A7B2;
-    margin-right: -25%;
+    margin-left: 10%;
 }
 footer .f-home p {
     margin-left: 1px;
@@ -176,6 +194,6 @@ footer .user-img {
     background-position: 0 -151px;
 }
 .f-user {
-    margin-left: -25%;
+    margin-right: 10%;
     color: #999;
 }

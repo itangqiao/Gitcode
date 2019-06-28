@@ -18,28 +18,40 @@
             <section class="top-sec2 ">找护工</section>
         </div>
         <span class="top-img"></span>
-        <!-- 菜单选项  -->
-        <div class="row menu-select">
-            <div class="col-md-4 select">
-                <select name="select-local">
-                    <option value="">所在地</option>
-                    <option value="sz">深圳</option>
-                    <option value="gz">广州</option>
-                </select>
+        <!-- 下拉菜单  -->
+        <div class="row">
+            <div id="d1" class="col-md-4 col-xs-4">
+                <div id="selected-1">
+                    <span id="content-1" data-id="">所在地</span>
+                    <b class="bg1"></b>
+                </div>
+                <ul class="ul list-1">
+                    <li id><a href="javascript:;" data-id="1">深圳</a></li>
+                    <li><a href="javascript:;" data-id="2">广州</a></li>
+                    <li><a href="javascript:;" data-id="3">东莞</a></li>
+                </ul>
             </div>
-            <div class="col-md-4 select">
-                <select name="select-live">
-                    <option value="">食宿</option>
-                    <option value="">包吃</option>
-                    <option value="">包住</option>
-                </select>
+            <div id="d2" class="col-md-4 col-xs-4">
+                <div id="selected-2">
+                    <span id="content-2" data-id="">所在地</span>
+                    <b class="bg1"></b>
+                </div>
+                <ul class="ul list-2">
+                    <li><a href="javascript:;" data-id="1">深圳</a></li>
+                    <li><a href="javascript:;" data-id="2">广州</a></li>
+                    <li><a href="javascript:;" data-id="3">东莞</a></li>
+                </ul>
             </div>
-            <div class="col-md-4 select">
-                <select name="select-sick">
-                    <option value="">病人情况</option>
-                    <option value="">紧急</option>
-                    <option value="">良好</option>
-                </select>
+            <div id="d3" class="col-md-4 col-xs-4">
+                <div id="selected-3">
+                    <span id="content-3" data-id="">所在地</span>
+                    <b class="bg1"></b>
+                </div>
+                <ul class="ul list-3">
+                    <li><a href="javascript:;" data-id="1">深圳</a></li>
+                    <li><a href="javascript:;" data-id="2">广州</a></li>
+                    <li><a href="javascript:;" data-id="3">东莞</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -155,7 +167,7 @@
 
     <!-- 底部 -->
     <footer>
-        <div class="f-bottom-bar" >
+        <div class="f-bottom-bar">
             <div class="f-home">
                 <span class="home-img"></span>
                 <p>首页</p>
@@ -170,8 +182,42 @@
         </div>
 
     </footer>
+
     <script src="./jquery-1.9.1.min.js"></script>
     <script src="./bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#selected-1").click(function () {
+                $(".list-1").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#selected-2").click(function () {
+                $(".list-2").toggle();
+            });
+        });
+        $(document).ready(function () {
+            $("#selected-3").click(function () {
+                $(".list-3").toggle();
+            });
+        });
+        
+        $(".list-1 li>a").click(function () {
+            $("#content-1").html($(this).html())
+                .attr("data-id", $(this).attr("data-id-1"));
+            $(".list-1").css("display", "none");
+        })
+        $(".list-2 li>a").click(function () {
+            $("#content-2").html($(this).html())
+                .attr("data-id", $(this).attr("data-id"));
+            $(".list-2").css("display", "none");
+        })
+        $(".list-3 li>a").click(function () {
+            $("#content-3").html($(this).html())
+                .attr("data-id", $(this).attr("data-id"));
+            $(".list-3").css("display", "none");
+        })
+    </script>
 </body>
 
 </html>

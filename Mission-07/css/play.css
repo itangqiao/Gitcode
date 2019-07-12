@@ -1,0 +1,138 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: #29bde0;
+}
+.topbar {
+  height: 40px;
+  background: #29bde0;
+  line-height: initial;
+}
+.t-menu {
+  line-height: 38px;
+}
+.t-title {
+  text-align: center;
+}
+.t-title span {
+  line-height: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.t-close {
+  text-align: right;
+  line-height: 38px;
+}
+/* 游戏开始 */
+.play-begin {
+  height: 35px;
+  background: #b9e9f5;
+  line-height: 35px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.play-begin p {
+  position: absolute;
+  left: 20px;
+  font-size: 1vw;
+}
+.play-begin img {
+  position: absolute;
+  right: 14.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.choose-dia-img {
+    width: 0;
+    height: 0;
+    top: 74px;
+    left: 28px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #b9e9f5;
+    position: absolute;
+}
+.choose-intro {
+  margin: 0 0 6px 20px;
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* 投票区 */
+.content {
+  margin: 6px 2% 0;
+}
+.box-row {
+  display: flex;
+}
+.box {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+.box:hover .box-bottom {
+  visibility: visible;
+}
+.box-top {
+  height: 20vw;
+  line-height: 16vw;
+  text-align: center;
+  background: #f5c97b;
+  border: 2px solid #fff;
+  position: relative;
+}
+.box-top p:first-child {
+  font-size: 3vw;
+  width: 18vw;
+  height: 14.5vw;
+  margin: 0;
+}
+.box-top p:last-child {
+  width: 100%;
+  height: 5vw;
+  line-height: 5vw;
+  color: #fff;
+  background: #83b09a;
+  font-size: 2vw;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.box-bottom {
+  font-size: 0;
+  margin: 2.5vw 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.content img {
+  width: 4vw;
+  padding: 0 0.5vw;
+}
+
+/* 底部栏 */
+footer {
+  position: relative;
+}
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(41, 189, 224, 0.8);
+}
+.footer-bar .btn {
+  width: 70%;
+  border-radius: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  background-color: #fbb435;
+}

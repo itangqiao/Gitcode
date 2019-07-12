@@ -1,21 +1,241 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8">
-     <title>游戏开始</title>
-     <!-- 引入Bootstrap核心样式文件（必须） -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+<html lang="en">
 
-     <!-- 你自己的样式或其他文件 -->
-     <link rel="stylesheet" href="example.css">
-   </head>
-   <body>
- 
-     <!-- 由于Bootstrap的JS插件依赖jQuery，so 引入jQuery -->
-     <script src="jquery-1.9.1.min.js"></script>
-     <!-- 引入所有的Bootstrap的JS插件 -->
-     <script src="bootstrap.js"></script>
-     <!-- 你自己的脚本文件 -->
-     <script src="example.js"></script>
-   </body>
-   </html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>游戏开始</title>
+  <!-- 引入Bootstrap核心样式文件（必须） -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- 你自己的样式或其他文件 -->
+  <link rel="stylesheet" href="css/play.css">
+</head>
+
+<body>
+  <!--------------------- 顶部栏 ------------------->
+  <header class="container-fluid">
+    <div class="topbar row">
+      <div class="t-menu col-md-4 col-xs-4">
+        <img src="./img/menu.png" width="20px">
+      </div>
+      <div class="t-title col-md-4 col-xs-4">
+        <span>投票</span>
+      </div>
+      <div class="t-close col-md-4 col-xs-4">
+        <img src="./img/close.png" width="20px">
+      </div>
+    </div>
+  </header>
+
+  <!------------------ 游戏开始 -------------------->
+  <div class="play-begin container-fluid">
+    <p>发言讨论结束，大家请投票</p>
+    <audio id="voice" src="./MP3/bgm.mp3"></audio>
+    <img class="but" src="./img/play.png" width="20px">
+
+  </div>
+  <div class="choose-dia-img"></div>
+  <p class="choose-intro">
+    点击得票数最多人的头像
+  </p>
+
+
+  <!-------------------- 投票区 --------------------->
+  <main class="content">
+    <div class="box-row">
+      <div class="part-1 box ">
+        <div class="box-top ">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-2 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+
+      </div>
+
+      <div class="part-3 box ">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+    </div>
+    <div class="box-row">
+      <div class="part-4 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-5 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-6 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+    </div>
+    <div class="box-row">
+      <div class="part-7 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-8 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-9 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+    </div>
+    <div class="box-row">
+      <div class="part-10 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-11 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+
+      <div class="part-12 box">
+        <div class="box-top">
+          <p>水民</p>
+          <p>1号</p>
+        </div>
+        <div class="box-bottom ">
+          <img src="./img/dagger.png">
+          <img src="./img/search.png">
+          <img src="./img/sight.png">
+          <img src="./img/add.png">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <form method="POST" action="./over.html">
+      <div class="footer-bar well">
+        <input type="submit" class="btn" value="投死">
+      </div>
+    </form>
+
+  </footer>
+
+  <!-- 由于Bootstrap的JS插件依赖jQuery -->
+  <script src="jquery-1.9.1.min.js"></script>
+  <!-- 引入所有的Bootstrap的JS插件 -->
+  <script src="bootstrap.js"></script>
+  <!-- 你自己的脚本文件 -->
+  <script>
+    $(document).ready(function () {
+      var voice = document.getElementById('voice'); //获取到audio元素
+      $('.but').click(function () { //点击文字事件
+        if (voice.paused) { //判断音乐是否在播放中，暂停状态
+          voice.play(); //音乐播放
+          $('.but').text('暂停'); //切换文字
+
+        } else { //播放状态
+          voice.pause(); //音乐停止
+          $('.but').text('播放'); //切换文字
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

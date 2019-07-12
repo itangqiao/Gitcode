@@ -1,0 +1,124 @@
+body {
+  background: #f0f0f0;
+  color: #9a9a9a;
+  font-family: "Courier New", Courier, monospace;
+}
+header .top-bar {
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+  background: #29bde0;
+}
+.top-bar {
+  position: fixed;
+}
+.top-bar ul {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+.top-bar li {
+  list-style: none;
+  width: 17px;
+  border: 1px solid #fff;
+  margin: 4px;
+}
+.title {
+  margin: 56px 15px 16px;
+  background: #fff;
+  width: auto;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+.title:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); /*箭头方向可以自由切换角度*/
+  margin: -48px 0 0;
+  position: absolute;
+  right: 10px;
+}
+/***************主题栏-内容栏 *************/
+.content {
+  height: 442px;
+  margin: 10px 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.content-t p {
+  height: 50px;
+  font-size: 18px;
+  color: #fcc768;
+  text-align: center;
+  line-height: 50px;
+  border-bottom: 1px solid #fde1ae;
+}
+.content-m .mode-1,
+.mode-2,
+.mode-3 {
+  height: 70px;
+  background: #69d1e9;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 70px;
+  margin: 15px 26px;
+}
+.content-m div > div {
+  cursor: pointer;
+}
+.content-m .player {
+  text-align: center;
+  margin: 0 26px;
+}
+/****************** 三角箭头 *****************/
+.comtent-r-pic {
+  font-size: 0;
+  line-height: 0;
+  border-width: 13px;
+  border-color: #fbb435;
+  border-right-width: 0;
+  border-style: dashed;
+  border-left-style: solid;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+}
+
+/***************** 轮播列表样式 *****************/
+.content .list-pic ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin-bottom: 5px;
+}
+.content .list-pic li {
+  list-style: none;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+}
+.content .list-pic li:first-child {
+  background: #69d1e9;
+}

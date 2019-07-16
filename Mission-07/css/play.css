@@ -1,14 +1,22 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background: #29bde0;
+  
+}
+header {
+  /* position: fixed; */
+  
+  
 }
 .topbar {
   height: 40px;
   background: #29bde0;
   line-height: initial;
+  /* position: fixed; */
 }
 .t-menu {
   line-height: 38px;
+  padding-left: 30px;
 }
 .t-title {
   text-align: center;
@@ -22,13 +30,13 @@ body {
 .t-close {
   text-align: right;
   line-height: 38px;
+  padding-right: 30px;
 }
 /* 游戏开始 */
 .play-begin {
   height: 35px;
   background: #b9e9f5;
   line-height: 35px;
-  margin-bottom: 6px;
   position: relative;
 }
 .play-begin p {
@@ -55,14 +63,16 @@ body {
 }
 .choose-intro {
   margin: 0 0 6px 20px;
-  padding: 5px;
+  padding: 10px 5px 5px 5px;
   color: #fff;
   font-size: 12px;
+  background-color: #29bde0;
 }
 
 /* 投票区 */
 .content {
   margin: 6px 2% 0;
+  margin-top: 114px;
 }
 .box-row {
   display: flex;
@@ -127,7 +137,7 @@ footer {
   border-radius: 0;
   text-align: center;
   display: inline-block;
-  background-color: rgba(41, 189, 224, 0.8);
+  background-color: rgba(41, 189, 224, 1);
 }
 .footer-bar .btn {
   width: 70%;

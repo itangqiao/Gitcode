@@ -86,7 +86,7 @@ header .top-bar {
   margin: 0 26px;
 }
 /****************** 三角箭头 *****************/
-.comtent-r-pic {
+.content-r-pic {
   font-size: 0;
   line-height: 0;
   border-width: 13px;
@@ -119,6 +119,10 @@ header .top-bar {
   border-radius: 50%;
   background: #ccc;
 }
-.content .list-pic li:first-child {
+/* .content .list-pic li:first-child {
   background: #69d1e9;
+} */
+.list-pic li:hover {
+  background: #69d1e9;
+  cursor: pointer;
 }
